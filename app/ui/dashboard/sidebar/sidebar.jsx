@@ -13,6 +13,8 @@ import {
   MdOutlineSettings,
   MdHelpCenter,
   MdLogout,
+  MdMenu, 
+  MdClose
 } from "react-icons/md";
 
 const menuItems = [
