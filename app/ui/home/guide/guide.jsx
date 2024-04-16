@@ -1,10 +1,12 @@
 import { CheckIcon } from '@heroicons/react/20/solid'
 
 const includedFeatures = [
-  'Private forum access',
+  'Private healthcare access',
   'Member resources',
-  'Entry to annual conference',
-  'Official member t-shirt',
+  'Entry to annual health conference',
+  'Official member certificate',
+  'Special discounted pricing',
+  'Special Emergency response',
 ]
 
 const Guide = () => {
@@ -14,16 +16,22 @@ const Guide = () => {
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-bold tracking-tight text-orange-600 sm:text-4xl">Simple no-tricks pricing</h2>
           <p className="mt-6 text-lg leading-8 text-gray-200">
-            Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas
-            in. Explicabo id ut laborum.
+          Experience transparency and peace of mind with QuickMed. 
+          Our app offers simple, no-tricks pricing on every request 
+          for medical services, so you always know what to expect. 
+          Trust in QuickMed for straightforward, reliable healthcare 
+          solutions at your fingertips.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
           <div className="p-8 sm:p-10 lg:flex-auto">
             <h3 className="text-2xl font-bold tracking-tight text-orange-600">Lifetime membership</h3>
             <p className="mt-6 text-base leading-7 text-gray-200">
-              Lorem ipsum dolor sit amet consect etur adipisicing elit. Itaque amet indis perferendis blanditiis
-              repellendus etur quidem assumenda.
+            Join QuickMed and enjoy a lifetime membership that unlocks a 
+            world of healthcare at your service. As a member, 
+            you gain unlimited access to our medical services and resources, 
+            ensuring your health and well-being are always a priority. Become 
+            a part of the QuickMed family for comprehensive, lasting care.
             </p>
             <div className="mt-10 flex items-center gap-x-4">
               <h4 className="flex-none text-sm font-semibold leading-6 text-red-600">What’s included</h4>
@@ -44,10 +52,10 @@ const Guide = () => {
           <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
             <div className="rounded-2xl bg-gray-800 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
               <div className="mx-auto max-w-xs px-8">
-                <p className="text-base font-semibold text-gray-200">Pay once, own it forever</p>
+                <p className="text-base font-semibold text-gray-200">Pay once, membership forever</p>
                 <p className="mt-6 flex items-baseline justify-center gap-x-2">
-                  <span className="text-5xl font-bold tracking-tight text-gray-100">$349</span>
-                  <span className="text-sm font-semibold leading-6 tracking-wide text-gray-100">USD</span>
+                  <span className="text-5xl font-bold tracking-tight text-gray-100">N12,657</span>
+                  <span className="text-sm font-semibold leading-6 tracking-wide text-gray-100">Naira</span>
                 </p>
                 <a
                   href="#"

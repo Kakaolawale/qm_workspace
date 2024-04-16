@@ -1,20 +1,19 @@
-"use client"
-import { useState } from 'react'
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+"use client";
+import { useState } from 'react';
+import { Dialog } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
-]
-
+  { name: 'QuickMed', href: '#' },
+  { name: 'QuickMed Team WorkSpace', href: '#' },
+  { name: 'Health Service Providers', href: '#' },
+  { name: 'Adain', href: '#' },
+  { name: 'Conference', href: '#' },
+  { name: 'Partners', href: '#' },
+];
 
 const Hero = () => {
-
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <div className="">
@@ -22,27 +21,27 @@ const Hero = () => {
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">QuickMed</span>
               <img
                 className="h-6 w-auto"
                 src="/quickmedworkspace.png"
-                alt=""
+                alt="QuickMed Logo"
               />
             </a>
           </div>
           <div className="flex lg:hidden">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-100"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-100 hover:text-orange-600"
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-12 text-gray-100">
+          <div className="hidden lg:flex lg:gap-x-12 text-gray-100 hover:text-orange-600">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-200">
+              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-200 hover:text-orange-600">
                 {item.name}
               </a>
             ))}
@@ -53,16 +52,16 @@ const Hero = () => {
             </a>
           </div>
         </nav>
-        <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+        <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={() => setMobileMenuOpen(false)}>
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-black bg-opacity-80 bg-blur-5xl px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
+                <span className="sr-only">QuickMed</span>
                 <img
                   className="h-5 w-auto"
                   src="/quickmedworkspace.png"
-                  alt=""
+                  alt="QuickMed Logo"
                 />
               </a>
               <button
@@ -101,36 +100,40 @@ const Hero = () => {
         </Dialog>
       </header>
 
+      {/* Hero section */}
       <div className="relative isolate px-6 pt-14 lg:px-8">
+        {/* GIF background with reduced opacity */}
         <div
-          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-          aria-hidden="true"
-        >
-          <div
-            className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-            style={{
-              clipPath:
-                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-            }}
-          />
-        </div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+          className="absolute inset-0"
+          style={{
+            backgroundImage: 'url(/quickglobe.gif)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center center',
+            opacity: 0.3 // Adjust opacity as desired (0.0 to 1.0)
+          }}
+        />
+        
+        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 relative">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-200 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Announcing our next round of funding.{' '}
+              Announcing QuickMed App next edition.{' '}
               <a href="#" className="font-semibold text-orange-600">
                 <span className="absolute inset-0" aria-hidden="true" />
-                Read more <span aria-hidden="true">&rarr;</span>
+                QM 2.5.6 <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
           </div>
           <div className="text-center">
+          <img
+              src="./quickmeddoctor.gif"
+              alt="Animated GIF"
+              className="mx-auto mt-8"
+            />
             <h1 className="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">
-              Data to enrich your online business
+              QuickMed App is changing the way we live by saving lives quicker than time.
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-400">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-              fugiat veniam occaecat fugiat aliqua.
+              QuickMed is revolutionizing healthcare by putting life-saving solutions within reach. With cutting-edge technology and a commitment to excellence.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
@@ -145,6 +148,8 @@ const Hero = () => {
             </div>
           </div>
         </div>
+        
+        {/* Gradient background */}
         <div
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
           aria-hidden="true"
@@ -159,7 +164,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

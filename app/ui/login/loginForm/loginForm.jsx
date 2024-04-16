@@ -7,11 +7,16 @@ const LoginForm = () => {
 
   return (
     <form action="" className={styles.form}>
-      <h1>WorkSpace Login</h1>
-      <p>Login with your QuickMed Workspace Platform Credential as a staff.</p>
+      <h1>QuickMed Team WorkSpace Login</h1>
+      <p>Login with your QuickMed WorkSpace team Credential as a staff.</p>
       <input type="text" placeholder="username" name="username" />
       <input type="password" placeholder="password" name="password" />
-      <button>Login</button>
+      <button>
+      <a href="./dashboard"
+       >
+      Log in
+      </a>
+      </button>
     </form>
   );
 };

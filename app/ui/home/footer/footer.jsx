@@ -2,11 +2,11 @@
 
 const Footer = () => {
   return (
-    <footer class="bg-white dark:bg-gray-900">
+    <footer class="bg-orange-500 dark:bg-gray-900">
     <div class="container px-6 py-12 mx-auto">
         <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
             <div class="sm:col-span-2">
-                <h1 class="max-w-lg text-xl font-semibold tracking-tight text-gray-800 xl:text-2xl dark:text-white">Subscribe our newsletter to get update.</h1>
+                <h1 class="max-w-lg text-xl font-semibold tracking-tight text-gray-100 xl:text-2xl dark:text-white">Subscribe our newsletter to get update.</h1>
 
                 <div class="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row">
                     <input id="email" type="text" class="px-4 py-2 text-gray-700 bg-white border rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Email Address" />
@@ -18,22 +18,25 @@ const Footer = () => {
             </div>
 
             <div>
-                <p class="font-semibold text-gray-800 dark:text-white">Quick Link</p>
+                <p class="font-semibold text-gray-100 dark:text-white">Quick Link</p>
 
                 <div class="flex flex-col items-start mt-5 space-y-2">
-                    <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Home</a>
-                    <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Who We Are</a>
-                    <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Our Philosophy</a>
+                    <a href="#" class="text-gray-100 transition-colors duration-300 dark:text-gray-300 dark:hover:text-black hover:underline hover:text-black">Home</a>
+                    <a href="#" class="text-gray-100 transition-colors duration-300 dark:text-gray-300 dark:hover:text-black hover:underline hover:text-black">Who We Are</a>
+                    <a href="#" class="text-gray-100 transition-colors duration-300 dark:text-gray-300 dark:hover:text-black hover:underline hover:text-black">Our Philosophy</a>
+                    <a href="#" class="text-gray-100 transition-colors duration-300 dark:text-gray-300 dark:hover:text-black hover:underline hover:text-black">Developers</a>
+                    <a href="#" class="text-gray-100 transition-colors duration-300 dark:text-gray-300 dark:hover:text-black hover:underline hover:text-black">QuickAPIs</a>
                 </div>
             </div>
 
             <div>
-                <p class="font-semibold text-gray-800 dark:text-white">Industries</p>
+                <p class="font-semibold text-gray-100 dark:text-white">Industries</p>
 
                 <div class="flex flex-col items-start mt-5 space-y-2">
-                    <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Retail & E-Commerce</a>
-                    <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Information Technology</a>
-                    <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">Finance & Insurance</a>
+                    <a href="#" class="text-gray-100 transition-colors duration-300 dark:text-gray-300 dark:hover:text-black hover:underline hover:text-black">Ambulance</a>
+                    <a href="#" class="text-gray-100 transition-colors duration-300 dark:text-gray-300 dark:hover:text-black hover:underline hover:text-black">Medical Consultant</a>
+                    <a href="#" class="text-gray-100 transition-colors duration-300 dark:text-gray-300 dark:hover:text-black hover:underline hover:text-black">Hospitals</a>
+                    <a href="#" class="text-gray-100 transition-colors duration-300 dark:text-gray-300 dark:hover:text-black hover:underline hover:text-black">Conferences</a>
                 </div>
             </div>
         </div>
@@ -42,11 +45,15 @@ const Footer = () => {
         
         <div class="flex items-center justify-between">
             <a href="#">
-                <img class="w-auto h-7" src="https://merakiui.com/images/full-logo.svg" alt="" />
+            <img
+                className="h-6 w-auto"
+                src="/quickmedworkspacewhite.png"
+                alt=""
+              />
             </a>
             
             <div class="flex -mx-2">
-                <a href="#" class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" aria-label="Reddit">
+                <a href="#" class="mx-2 text-gray-100 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" aria-label="Reddit">
                     <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -55,7 +62,7 @@ const Footer = () => {
                     </svg>
                 </a>
 
-                <a href="#" class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" aria-label="Facebook">
+                <a href="#" class="mx-2 text-gray-100 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" aria-label="Facebook">
                     <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -64,7 +71,7 @@ const Footer = () => {
                     </svg>
                 </a>
 
-                <a href="#" class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" aria-label="Github">
+                <a href="#" class="mx-2 text-gray-100 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" aria-label="Github">
                     <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
