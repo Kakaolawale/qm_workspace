@@ -1,22 +1,26 @@
 import Image from "next/image";
-import Camp from "./ui/home/camp/camp";
-import Features from "./ui/home/features/features";
-import Guide from "./ui/home/guide/guide";
 import Hero from "./ui/home/hero/hero";
-import Stats from "./ui/home/stats/stats";
-import Team from "./ui/home/team/team";
+import VisualFeatures from "./ui/home/visualfeatures/visualfeatures";
+import Features from "./ui/home/features/features"
+import CTA from "./ui/home/cta/cta";
+import Testimonial from "./ui/home/testimonials/testimonials";
+import Pricing from "./ui/home/pricing/pricing";
+import FAQs from "./ui/home/faqs/faqs";
 import Partners from "./ui/home/partners/partners";
+
+
 
 export default function Home() {
   return (
     <>
-    <Hero />
-    <Camp />
-    <Guide />
-    <Stats />
-    <Partners />
-    <Team />
-    <Features />
+      <Hero />
+      <VisualFeatures />
+      <Features />
+      <CTA />
+      <Testimonial />
+      <Partners />
+      <Pricing />
+      <FAQs />
     </>
   );
 }

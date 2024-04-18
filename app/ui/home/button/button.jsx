@@ -1,16 +1,10 @@
-import Image from "next/image";
-
-
-const Button = ({ type, title, icon, variant, full }) => {
-  return (
+const Button = ({ children, ...props }) => (
     <button
-    className={`flexCenter gap-3 rounded-full border ${variant} ${full && 'w-full'}`}
-      type={type}
+        role="button"
+        {...props}
+        className={`${props.className || ""} px-4 py-2.5 font-medium text-sm text-center duration-150`}
     >
-      {icon && <Image src={icon} alt={title} width={24} height={24} />}
-      <label className="bold-16 whitespace-nowrap cursor-pointer">{title}</label>
+        {children}
     </button>
-  )
-}
-
+)
 export default Button
